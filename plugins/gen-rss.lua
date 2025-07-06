@@ -51,9 +51,9 @@ rss_template = [[
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-  <title>Beau McCartney</title>
+  <title>Tate McCartney</title>
   <link>{{website_url}}</link>
-  <description>Beau McCartney's website and blog</description>
+  <description>Tate McCartney's website and blog</description>
   <language>en-us</language>
   <atom:link href="{{website_url}}/rss.xml" rel="self" type="application/rss+xml" />
   {%- for e in entries|reverse %}

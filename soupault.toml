@@ -139,7 +139,7 @@ index_item_template = """<li><time>{{publish_date}}</time> - <a href="{{url}}">{
 # Pages can be further processed with "widgets"
 
 [custom_options]
-website_url = "https://beaumccartney.com"
+website_url = "https://tatemccartney.com"
 
 # Takes the content of the first <h1> and inserts it into the <title>
 [widgets.page-title]
