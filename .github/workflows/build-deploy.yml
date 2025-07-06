@@ -49,13 +49,13 @@ jobs:
       - name: Build the site
         run: bash build.sh
 
-      # - name: Checkout resume
-      #   uses: actions/checkout@v4
-      #   with:
-      #     repository: beaumccartney/resume
-      #     token: ${{ secrets.RESUME_ACCESS_TOKEN }}
-      #     path: resume
-      #     sparse-checkout: master.typ
+      - name: Checkout cv
+        uses: actions/checkout@v4
+        with:
+          repository: tatemcc/Curriculum-Vitae
+          token: ${{ secrets.RESUME_CLONE_TOKEN }}
+          path: cv
+          sparse-checkout: main.tex
 
       # - uses: typst-community/setup-typst@v4
       # - name: Build and install resume
