@@ -57,9 +57,12 @@ jobs:
           path: cv
           sparse-checkout: main.tex
 
-      # - uses: typst-community/setup-typst@v4
-      # - name: Build and install resume
-      #   run: typst compile resume/master.typ build/Beau-McCartney-Resume.pdf
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv/main.tex
+
+      - name: Install resume in website folder
+        run: mv main.pdf build/Tate-McCartney-CV.pdf
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
