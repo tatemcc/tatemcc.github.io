@@ -47,7 +47,7 @@ jobs:
           bun-version-file: ".bun-version"
 
       - name: Build the site
-        run: bash build.sh
+        run: soupault
 
       - name: Checkout cv
         uses: actions/checkout@v4
